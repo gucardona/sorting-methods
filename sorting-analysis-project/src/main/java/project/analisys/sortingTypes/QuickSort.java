@@ -12,8 +12,7 @@ public class QuickSort {
         sort(a, p + 1, high);
     }
 
-    private static <T extends Comparable<? super T>> int partition(T[] a, int low, int
-            high) {
+    private static <T extends Comparable<? super T>> int partition(T[] a, int low, int high) {
         T pivot = a[high];
         int i = low - 1;
         for (int j = low; j < high; j++) {
