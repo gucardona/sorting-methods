@@ -2,64 +2,74 @@ package project.analisys;
 
 import project.analisys.sortingTypes.*;
 
-import java.util.*;
-import java.util.function.Consumer;
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
-
-
     public static void main( String[] args ) {
+
         int[] sizes = { 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536 };
         String[] sortMethods = { "BubbleSort", "InsertionSort", "SelectionSort", "HeapSort", "ShellSort", "MergeSort", "QuickSort" };
+        System.out.println( "### Sorting Algorithms Analisys ###" );
 
-        System.out.println("### Sorting Algorithms Analisys ###");
-        System.out.println("Array generation types: 1-Crescent, 2-Decrescent, 3-Random, 4-Random with Repeats");
+        for ( int size : sizes ) {
+            Integer[] crescentArray = ArrayGenerator.generateCrescentArray( size );
+            Integer[] decrescentArray = ArrayGenerator.generateDecrescentArray( size );
+            Integer[] randomArray = ArrayGenerator.generateRandomArray( size );
+            Integer[] randomArrayWithRepeats = ArrayGenerator.generateRandomArrayWithRepeats( size );
 
-        for (int size : sizes) {
-            System.out.println("Array size: " + size);
+            System.out.println( "Array size: " + size );
 
-            for (String sortMethod : sortMethods) {
+            for ( String sortMethod : sortMethods ) {
                 long totalTime = 0;
 
-                Integer[] crescentArray = ArrayGenerator.generateCrescentArray(size);
-                Integer[] decrescentArray = ArrayGenerator.generateDecrescentArray(size);
-                Integer[] randomArray = ArrayGenerator.generateRandomArray(size);
-                Integer[] randomArrayWithRepeats = ArrayGenerator.generateRandomArrayWithRepeats(size);
-                List<Integer[]> arrays = Arrays.asList(crescentArray, decrescentArray, randomArray, randomArrayWithRepeats);
+                List<Integer[]> arrays = Arrays.asList( crescentArray, decrescentArray, randomArray, randomArrayWithRepeats );
 
-                for (Integer[] arr : arrays) {
-                    for (int i = 0; i < 10; i++) {
-                        long startTime = System.currentTimeMillis();
-                        switch (sortMethod) {
+                for ( Integer[] arr : arrays ) {
+                    for ( int i = 0; i < 10; i++ ) {
+                        Integer[] arrCopy = Arrays.copyOf( arr, arr.length );
+
+                        long startTime = System.nanoTime();
+                        switch ( sortMethod ) {
                             case "BubbleSort":
-                                BubbleSort.bubbleSort( arr );
+                                BubbleSort.bubbleSort( arrCopy );
                                 break;
                             case "InsertionSort":
-                                InsertionSort.insertionSort( arr );
+                                InsertionSort.insertionSort( arrCopy );
                                 break;
                             case "SelectionSort":
-                                SelectionSort.selectionSort( arr );
+                                SelectionSort.selectionSort( arrCopy );
                                 break;
                             case "HeapSort":
-                                HeapSort.heapSort( arr );
+                                HeapSort.heapSort( arrCopy );
                                 break;
                             case "ShellSort":
-                                ShellSort.shellSort( arr );
+                                ShellSort.shellSort( arrCopy );
                                 break;
                             case "MergeSort":
-                                MergeSort.mergeSort( arr );
+                                MergeSort.mergeSort( arrCopy );
                                 break;
                             case "QuickSort":
-                                QuickSort.quickSort( arr );
+                                QuickSort.quickSort( arrCopy );
                                 break;
                         }
-                        long endTime = System.currentTimeMillis();
-                        totalTime += (endTime - startTime);
+                        long endTime = System.nanoTime();
+                        totalTime += ( endTime - startTime );
                     }
-                    System.out.println("### " + sortMethod + " total time for 10 executions: " + totalTime + " ms for array generation type: " + arrays.indexOf(arr) + " ###");
+                    System.out.println( "### " + sortMethod + " total time for 10 executions: " + totalTime + " ns for array generation type: " + checkArrayType( arrays.indexOf( arr ) ) + " ###" );
                 }
                 System.out.println();
             }
         }
+    }
+
+    private static String checkArrayType( int index ) {
+        return switch ( index ) {
+            case 0 -> "Crescent";
+            case 1 -> "Decrescent";
+            case 2 -> "Random";
+            case 3 -> "Random with Repeats";
+            default -> "Unknown";
+        };
     }
 }
