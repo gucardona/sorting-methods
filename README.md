@@ -5,7 +5,7 @@ Projeto criado para avaliar os seguintes métodos de ordenação: Bubble Sort, I
 Logs com o tempo de todas as execuções realizadas, separadas pelo tamanho do array:
 
  Sorting Algorithms Analisys 
-##Array Size##: 128
+Array Size: 128
  BubbleSort total time for 10 executions: 419400 ns for array generation type: Crescent 
  BubbleSort total time for 10 executions: 6051200 ns for array generation type: Decrescent 
  BubbleSort total time for 10 executions: 7266100 ns for array generation type: Random 
@@ -41,7 +41,7 @@ Logs com o tempo de todas as execuções realizadas, separadas pelo tamanho do a
  QuickSort total time for 10 executions: 3688300 ns for array generation type: Random 
  QuickSort total time for 10 executions: 3897100 ns for array generation type: Random with Repeats 
 
-##Array Size##: 256
+Array Size: 256
  BubbleSort total time for 10 executions: 24200 ns for array generation type: Crescent 
  BubbleSort total time for 10 executions: 12380200 ns for array generation type: Decrescent 
  BubbleSort total time for 10 executions: 14155600 ns for array generation type: Random 
@@ -77,7 +77,7 @@ Logs com o tempo de todas as execuções realizadas, separadas pelo tamanho do a
  QuickSort total time for 10 executions: 3626700 ns for array generation type: Random 
  QuickSort total time for 10 executions: 3979200 ns for array generation type: Random with Repeats 
 
-##Array Size##: 512
+Array Size: 512
  BubbleSort total time for 10 executions: 9200 ns for array generation type: Crescent 
  BubbleSort total time for 10 executions: 5706600 ns for array generation type: Decrescent 
  BubbleSort total time for 10 executions: 10276300 ns for array generation type: Random 
@@ -113,7 +113,7 @@ Logs com o tempo de todas as execuções realizadas, separadas pelo tamanho do a
  QuickSort total time for 10 executions: 9456300 ns for array generation type: Random 
  QuickSort total time for 10 executions: 9810500 ns for array generation type: Random with Repeats 
 
-##Array Size##: 1024
+Array Size: 1024
  BubbleSort total time for 10 executions: 34900 ns for array generation type: Crescent 
  BubbleSort total time for 10 executions: 23663300 ns for array generation type: Decrescent 
  BubbleSort total time for 10 executions: 42633400 ns for array generation type: Random 
@@ -149,7 +149,7 @@ Logs com o tempo de todas as execuções realizadas, separadas pelo tamanho do a
  QuickSort total time for 10 executions: 30132000 ns for array generation type: Random 
  QuickSort total time for 10 executions: 30786800 ns for array generation type: Random with Repeats 
 
-##Array Size##: 2048
+Array Size: 2048
  BubbleSort total time for 10 executions: 47200 ns for array generation type: Crescent 
  BubbleSort total time for 10 executions: 90679100 ns for array generation type: Decrescent 
  BubbleSort total time for 10 executions: 168336400 ns for array generation type: Random 
@@ -185,7 +185,7 @@ Logs com o tempo de todas as execuções realizadas, separadas pelo tamanho do a
  QuickSort total time for 10 executions: 110203300 ns for array generation type: Random 
  QuickSort total time for 10 executions: 111508600 ns for array generation type: Random with Repeats 
 
-##Array Size##: 4096
+Array Size: 4096
  BubbleSort total time for 10 executions: 54500 ns for array generation type: Crescent 
  BubbleSort total time for 10 executions: 328455500 ns for array generation type: Decrescent 
  BubbleSort total time for 10 executions: 632019300 ns for array generation type: Random 
@@ -221,7 +221,7 @@ Logs com o tempo de todas as execuções realizadas, separadas pelo tamanho do a
  QuickSort total time for 10 executions: 433488500 ns for array generation type: Random 
  QuickSort total time for 10 executions: 438318500 ns for array generation type: Random with Repeats 
 
-##Array Size##: 8192
+Array Size: 8192
  BubbleSort total time for 10 executions: 105500 ns for array generation type: Crescent 
  BubbleSort total time for 10 executions: 1389458800 ns for array generation type: Decrescent 
  BubbleSort total time for 10 executions: 3034104900 ns for array generation type: Random 
@@ -257,7 +257,7 @@ Logs com o tempo de todas as execuções realizadas, separadas pelo tamanho do a
  QuickSort total time for 10 executions: 1745651500 ns for array generation type: Random 
  QuickSort total time for 10 executions: 1751800200 ns for array generation type: Random with Repeats 
 
-##Array Size##: 16384
+Array Size: 16384
  BubbleSort total time for 10 executions: 233600 ns for array generation type: Crescent 
  BubbleSort total time for 10 executions: 5516337500 ns for array generation type: Decrescent 
  BubbleSort total time for 10 executions: 13737494200 ns for array generation type: Random 
@@ -293,7 +293,7 @@ Logs com o tempo de todas as execuções realizadas, separadas pelo tamanho do a
  QuickSort total time for 10 executions: 6949840200 ns for array generation type: Random 
  QuickSort total time for 10 executions: 6963409900 ns for array generation type: Random with Repeats 
 
-##Array Size##: 32768
+Array Size: 32768
  BubbleSort total time for 10 executions: 420700 ns for array generation type: Crescent 
  BubbleSort total time for 10 executions: 22263288600 ns for array generation type: Decrescent 
  BubbleSort total time for 10 executions: 58760349500 ns for array generation type: Random 
@@ -329,7 +329,7 @@ Logs com o tempo de todas as execuções realizadas, separadas pelo tamanho do a
  QuickSort total time for 10 executions: 28171301400 ns for array generation type: Random 
  QuickSort total time for 10 executions: 28202619300 ns for array generation type: Random with Repeats 
 
-##Array Size##: 65536
+Array Size: 65536
  BubbleSort total time for 10 executions: 854400 ns for array generation type: Crescent 
  BubbleSort total time for 10 executions: 89400077000 ns for array generation type: Decrescent 
  BubbleSort total time for 10 executions: 254460443600 ns for array generation type: Random 
